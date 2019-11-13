@@ -1,0 +1,10 @@
+<h1><%= @item.id ? 'Edit Department' : 'Create Department' %></h1>
+<%= form_for [@department, @item] do |t| %>
+  <%= t.label :name %>
+  <%= t.text_field :name %>
+  <br /> 
+  <%= t.label :price %>
+  <%= t.text_field :price %>
+  <br /> 
+  <%= t.submit %>
+  <% end %> 
