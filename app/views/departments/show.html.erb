@@ -1,0 +1,12 @@
+<h1><%= @department.name %></h1> 
+<ul>
+  <li><%= @department.email %></li>
+  <li><%= @department.number %></li>
+</ul>
+<%= link_to 'Delete Department', @department, method: :delete %>
+<%= link_to 'Edit Department', edit_department_path(@department) %>
+<hr />
+<h3>Please look at my items</h3>
+<button><%= link_to "See items", item_departments_path(@department)%></button>
+
+
