@@ -1,10 +1,11 @@
-<h1> Items </h1> 
+<div class="container text-center"><h1> Items </h1></div>
 <hr /> 
 <p>See more details by clicking</p> 
-<button><%= link_to "add item", new_department_item_path(@department) %> </button>
+<button><%= link_to "Add Item", new_department_item_path(@department) %> </button>
 <ul>
 <% @items.each do |item| %>
-  <li><%= link_to item.name, [@department, item] %></li>
+  <li class="list-inline-item"><%= link_to item.name, [@department, item] %></li>
 <% end %>
 </ul> 
+<<button><%= link_to "Back to Department", department_path(@department) %> </button>
 
